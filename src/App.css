@@ -1,38 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Poppins:wght@200;300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: #CEDCE7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2rem;
+  font-family: "Archivo";
+  font-weight: bold;
+  color: #5F5797;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-form {
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input {
+  background-color: yellow;
+  padding: 13px;
+  border: #5F5797 solid 1px;
+  background-color: #CEDCE7;
+  color: #5F5797;
+  vertical-align: middle;
+}
+
+.todo-button {
+  background-color: #5F5797;
+  border: none;
+  margin-left: 16px ;
+  padding: 8px 16px;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #CEDCE7;
+  vertical-align: middle;
+}
+
+.todo-checkbox {
+  margin-right: 1rem;
+}
+
+.todo-list:first-child {
+  margin-top: 30px;
+}
+.todo-list {
+  list-style: none;
+  font-family: "Archivo";
+  font-size: 1rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+.todo-remove {
+  margin-left: 1rem;
+  padding: 4px 8px;
+  background-color: #5F5797;
+  border: none;
+  color: #CEDCE7;
+  font-family: "Poppins";
+}
+
+.todo-button:hover,
+.todo-remove:hover {
+  cursor: pointer;
+  background-color: #5F579799;
 }
